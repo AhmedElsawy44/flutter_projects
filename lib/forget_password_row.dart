@@ -1,38 +1,51 @@
 import 'package:flutter/material.dart';
 import 'package:iti_project/app_colors.dart';
+import 'package:iti_project/screans/otp_screen.dart';
+import '../widgets/custom_text_field.dart';
+import '../widgets/custom_button.dart';
 
-class ForgetPasswordRow extends StatelessWidget {
-  final String? firstWhiteText;
-  final String? secoednBlcakText;
-  const ForgetPasswordRow({
-    super.key,
-    this.firstWhiteText,
-    this.secoednBlcakText,
-  });
+class ForgetPassword extends StatelessWidget {
+  const ForgetPassword({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Text(
-          firstWhiteText ?? 'text 1 ',
-          style: TextStyle(
-            color: AppColors.whiteApp,
-            fontSize: 22,
-            fontWeight: FontWeight.w500,
-          ),
+    return Scaffold(
+      backgroundColor: AppColors.background,
+      appBar: AppBar(
+        title: const Text('استعادة كلمة المرور'),
+        backgroundColor: AppColors.primary,
+        foregroundColor: Colors.white,
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(24.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Text(
+              'من فضلك أدخل رقم الهاتف المرتبط بحسابك',
+              style: TextStyle(fontSize: 18),
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: 24),
+            const CustomTextField(
+              hint: 'رقم الهاتف',
+              icon: Icons.phone,
+            ),
+            const SizedBox(height: 24),
+            CustomButton(
+              text: 'التالي',
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const OtpView()),
+                );
+              },
+              backgroundColor: AppColors.primary,
+              textColor: Colors.white,
+            ),
+          ],
         ),
-        const SizedBox(width: 10),
-        Text(
-          secoednBlcakText ?? '',
-          style: TextStyle(
-            color: AppColors.whiteBloc,
-            fontSize: 22,
-            fontWeight: FontWeight.w500,
-          ),
-        ),
-      ],
+      ),
     );
   }
 }
