@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:iti_project/app_colors.dart';
+import 'package:iti_project/res/app_colors.dart';
 
 class CustomTextField extends StatelessWidget {
   final String hint;
@@ -20,7 +20,7 @@ class CustomTextField extends StatelessWidget {
       decoration: InputDecoration(
         hintText: hint,
         filled: true,
-        fillColor: AppColors.fieldFill,
+        fillColor: AppColors.textLight,
         prefixIcon: Icon(icon),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),

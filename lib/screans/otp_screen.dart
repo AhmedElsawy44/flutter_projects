@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
+import 'package:iti_project/screans/home_page.dart';
 import 'package:iti_project/widgets/custom_button.dart';
-import 'package:iti_project/app_colors.dart';
+import 'package:iti_project/res/app_colors.dart';
 
 class OtpView extends StatefulWidget {
   const OtpView({super.key});
@@ -111,7 +112,7 @@ class _OtpViewState extends State<OtpView> {
                       filled: true,
                       fillColor: Colors.white,
                       margin: EdgeInsets.only(right: 15),
-                      borderColor: AppColors.borderColor,
+                      borderColor: AppColors.secondary,
                       borderWidth: 5,
                       numberOfFields: 6,
                       showFieldAsBox: true,
@@ -121,7 +122,9 @@ class _OtpViewState extends State<OtpView> {
                     SizedBox(height: 50),
                     CustomButton(
                       text: 'تأكيد',
-                      onTap: () {},
+                      onTap: () {Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => HomeScreen()),);
+                      },
                       backgroundColor: AppColors.secondary,
                       textColor: AppColors.textDark,
                     ),

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:iti_project/app_strings.dart';
-import 'package:iti_project/forget_password_row.dart';
+import 'package:iti_project/res/app_strings.dart';
+import 'package:iti_project/screans/forget_password_row.dart';
 import 'package:iti_project/screans/otp_screen.dart';
 import 'package:iti_project/widgets/custom_button.dart';
 import 'package:iti_project/widgets/custom_text_field.dart';
-import 'package:iti_project/app_colors.dart';
+import 'package:iti_project/res/app_colors.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});

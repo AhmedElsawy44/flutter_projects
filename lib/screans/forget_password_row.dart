@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:iti_project/app_colors.dart';
+import 'package:iti_project/res/app_colors.dart';
 import 'package:iti_project/screans/otp_screen.dart';
-import '../widgets/custom_text_field.dart';
-import '../widgets/custom_button.dart';
+import '../../widgets/custom_text_field.dart';
+import '../../widgets/custom_button.dart';
 
 class ForgetPassword extends StatelessWidget {
   const ForgetPassword({super.key});
