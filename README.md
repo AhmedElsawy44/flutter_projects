@@ -19,13 +19,13 @@ This is a Flutter-based marketing app built with clean UI components, custom the
 
 | Splash | Login | OTP | Forget Password |
 |-------|--------|-----|-----------------|
-| ![Splash](Screenshot/splash_screen.png) | ![Login](Screenshot/login_screen.png) | ![OTP](Screenshot/otp_screen.png) | ![Forget](Screenshot/forget_password_screen.png) |
+| ![Splash](assets/Screenshot/splash_screen.png) | ![Login](assets/Screenshot/login_screen.png) | ![OTP](assets/Screenshot/otp_screen.png) | ![Forget](assets/Screenshot/forget_password_screen.png) |
 
 <br/>
 
 | Home | Bottom Navigation |
 |------|-------------------|
-| ![Home](Screenshot/home_screen.png) | ![Bottom Nav](Screenshot/buttom_navBar.png) |
+| ![Home](assets/Screenshot/home_screen.png) | ![Bottom Nav](assets/Screenshot/buttom_navBar.png) |
 
 ---
 
