@@ -1,16 +1,51 @@
-# iti_project
+# 🛍️ Flutter Marketing App
 
-A new Flutter project.
+This is a Flutter-based marketing app built with clean UI components, custom theming, and navigation logic. The app includes multiple screens such as splash, login, OTP, home, and password reset.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## ✨ Features
 
-A few resources to get you started if this is your first Flutter project:
+- 🖼️ Splash Screen
+- 🔐 Login & OTP Verification
+- 🔁 Forget Password Flow
+- 🏠 Home Screen with Categories
+- 🎨 Custom App Theme (Dark / Light mode)
+- 📱 Bottom Navigation Bar & Modal Bottom Sheet
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📸 Screenshots
+
+| Splash | Login | OTP | Forget Password |
+|-------|--------|-----|-----------------|
+| ![Splash](Screenshot/splash_screen.png) | ![Login](Screenshot/login_screen.png) | ![OTP](Screenshot/otp_screen.png) | ![Forget](Screenshot/forget_password_screen.png) |
+
+<br/>
+
+| Home | Bottom Navigation |
+|------|-------------------|
+| ![Home](Screenshot/home_screen.png) | ![Bottom Nav](Screenshot/buttom_navBar.png) |
+
+---
+
+## 🛠️ Technologies Used
+
+- **Flutter**
+- **Dart**
+- **Firebase Auth** (for login & OTP)
+- **Custom Widgets** (Theming, Bottom Nav, AppBar, etc.)
+
+---
+lib/
+├── res/                # Colors, styles, themes
+├── models/             # Data models
+├── widgets/            # Reusable widgets (AppBar, BottomNav, etc.)
+├── screens/            # UI Screens (login, home, otp, etc.)
+└── main.dart           # App entry point
+
+## 🚀 Getting Started
+
+```bash
+flutter pub get
+flutter run
